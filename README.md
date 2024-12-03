@@ -17,4 +17,4 @@ More features to come...
 ---
 
 Thank you:
-- QSourceHighlite for syntax highlighting (https://github.com/Waqar144/QSourceHighlite)
+- Waqar144 for syntax highlighting (https://github.com/Waqar144/QSourceHighlite)
