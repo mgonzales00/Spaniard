@@ -1,3 +1,5 @@
-![spaniard-logo](https://github.com/user-attachments/assets/e9c23605-0d85-42c3-b10d-af4b8c98f383)
+# Spaniard Text Editor
+
+![spaniard-logo-256x256](https://github.com/user-attachments/assets/37d38b03-6b6f-4417-9c98-a219b3355205)
 
 Spaniard is a text editor written in C++ and built with QtCreator and Qt6.
