@@ -18,3 +18,4 @@ More features to come...
 
 Thank you:
 - Waqar144 for syntax highlighting (https://github.com/Waqar144/QSourceHighlite)
+- Yusuke Kamiyamane for icons (https://p.yusukekamiyamane.com/)
