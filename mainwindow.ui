@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionCreateNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_View"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+   <addaction name="actionCreateNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionFindReplace"/>
+   <addaction name="actionChangeFont"/>
+   <addaction name="actionChangeTabDistance"/>
+   <addaction name="actionChangeHighlightLine"/>
+   <addaction name="actionSettings"/>
+  </widget>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/Yusuke-Kamiyamane-Fugue-Printer.16.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionCreateNew">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/Yusuke-Kamiyamane-Fugue-Blue-document-plus.16.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Create New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/Yusuke-Kamiyamane-Fugue-Blue-folder-open-document.16.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionFindReplace">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/magnifier.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/undo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/redo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionChangeFont">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/edit-family.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Change Font</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionChangeTabDistance">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/change-tab-dist.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>ChangeTabDistance</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/gear-icon.png</normaloff>:/icons/gear-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionChangeHighlightLine">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/edit-rule-icon.png</normaloff>:/icons/edit-rule-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Change Highlight Line</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

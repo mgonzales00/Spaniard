@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/Yusuke-Kamiyamane-Fugue-Blue-document-plus.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Blue-document-pencil.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Folder-open-document.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Exclamation-white.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Disk-plus.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Disk.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Blue-folder-open-document.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Information-octagon.16.png</file>
+        <file>icons/Yusuke-Kamiyamane-Fugue-Printer.16.png</file>
+        <file>icons/magnifier.png</file>
+        <file>icons/edit-family.png</file>
+        <file>icons/redo.png</file>
+        <file>icons/undo.png</file>
+        <file>icons/plus.png</file>
+        <file>icons/disk--plus.png</file>
+        <file>icons/change-tab-dist.png</file>
+        <file>icons/gear-icon.png</file>
+        <file>icons/edit-rule-icon.png</file>
+    </qresource>
+</RCC>

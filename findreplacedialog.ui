@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindReplaceDialog</class>
+ <widget class="QDialog" name="FindReplaceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>503</width>
+    <height>223</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout_2">
+   <item row="0" column="0" colspan="2">
+    <widget class="QTabWidget" name="tabFindReplace">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabFind">
+      <attribute name="title">
+       <string>Find</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="findMatchCaseCheckBox">
+         <property name="text">
+          <string>Match case</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="findNextButton">
+         <property name="text">
+          <string>Find Next</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="findWholeWordsCheckBox">
+         <property name="text">
+          <string>Match whole words</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="findCancelButton">
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" rowspan="3">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="title">
+          <string>Direction</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QRadioButton" name="findUpButton">
+            <property name="text">
+             <string>Up</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="findDownButton">
+            <property name="text">
+             <string>Down</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="findWhatLabel">
+         <property name="text">
+          <string>Find what:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="findSearchLineEdit"/>
+       </item>
+       <item row="1" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabReplace">
+      <attribute name="title">
+       <string>Replace</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayoutReplace">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="replaceSearchLineEdit"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="replaceMatchCaseCheckBox">
+         <property name="text">
+          <string>Match case</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" rowspan="3">
+        <widget class="QGroupBox" name="groupBoxReplace">
+         <property name="title">
+          <string>Direction</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayoutReplace">
+          <item>
+           <widget class="QRadioButton" name="replaceUpButton">
+            <property name="text">
+             <string>Up</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="replaceDownButton">
+            <property name="text">
+             <string>Down</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="replaceButton">
+         <property name="text">
+          <string>Replace</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <spacer name="horizontalSpacerReplace">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="replaceWholeWordsCheckBox">
+         <property name="text">
+          <string>Match whole words</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="replaceWhatLabel">
+         <property name="text">
+          <string>Find what:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="replaceAllButton">
+         <property name="text">
+          <string>Replace All</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="replaceWithLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="withLabel">
+         <property name="text">
+          <string>Replace with:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="replaceCancelButton">
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
