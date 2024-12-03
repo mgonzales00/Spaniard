@@ -14,6 +14,8 @@ You can currently:
 
 More features to come...
 
+![image](https://github.com/user-attachments/assets/3c1b9f5e-3353-4595-a8d2-5de747eb8178)
+
 ---
 
 Thank you:
