@@ -14,5 +14,7 @@ You can currently:
 
 More features to come...
 
+---
+
 Thank you:
 - QSourceHighlite for syntax highlighting (https://github.com/Waqar144/QSourceHighlite)
